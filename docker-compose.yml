@@ -6,18 +6,18 @@ services:
       - "8080:8080"
     environment:
       - PORT=8080
-    depends_on:
-      - db
-  db:
-    image: postgres:14.1-alpine
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - '5432:5432'
-    volumes: 
-      - db:/var/lib/postgresql/data/
-volumes:
-  db:
-    driver: local
+    
+    
+#   db:
+#     image: postgres:14.1-alpine
+#     restart: always
+#     environment:
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+#     ports:
+#       - '5432:5432'
+#     volumes: 
+#       - db:/var/lib/postgresql/data/
+# volumes:
+#   db:
+#     driver: local

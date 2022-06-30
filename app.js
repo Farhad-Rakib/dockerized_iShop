@@ -11,9 +11,9 @@ app.get("/",(req,res)=>{
 });
 
 const user = 'postgres'
-const host = '172.21.0.2'
+const host = 'host.docker.internal'
 const database = 'postgres'
-const password = 'postgres'
+const password = '1521Fh@123'
 const dbport = '5432'
 
 const sequelize = new Sequelize(database, user, password, {
